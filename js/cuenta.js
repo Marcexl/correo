@@ -143,9 +143,6 @@ $("#cuenta-form").validate({
   }
 })
 
-
-
-
 function setProvincia(prov){
 
   let url = path+'ajax/getProvincias.php';

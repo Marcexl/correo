@@ -62,9 +62,12 @@ $("#sign-form").validate({
         {
           let token = data['token'];
           let email = data['email'];
-          let alert = '<div class="alert alert-success" role="alert">Great, welcome!</div>';
+          let alert = '<div class="alert alert-success" role="alert">!Hola, bienvenido/a!</div>';
           $("#alert-msj").show().html(alert);
-          initSession(token,email);
+          setTimeout(function(){
+          	initSession(token,email);
+          },1500);
+          
         }
         else
         {
