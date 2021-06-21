@@ -55,9 +55,9 @@
       <div id="icon-bell" onclick="getNotify()">
         <i class="fas fa-bell"></i>
       </div>
-       <div id="icon-menu">
+       <!--div id="icon-menu">
         <i class="material-icons">menu</i>
-      </div>
+      </div-->
     </nav>
 
     <!-- Login modal -->
@@ -224,7 +224,7 @@
             <div class="card-body">
               <h5 class="card-title text-center mb-0">Listado</h5>
               <img src="img/empty.gif" id="emoji">
-              <p class="text-center">Ups! Nada por aqui...</p>
+              <p class="text-center" id="emoji-text">Ups! Nada por aqui...</p>
               <table class="display" id="listado-lugares">
                 <thead>
                   <tr>
@@ -236,6 +236,9 @@
                 <tbody id="listado-result">
                 </tbody>
               </table>
+              <p align="center">
+                  <button class="btn btn-lg btn-secondary btn-block text-uppercase" id="register-button" type="button" onclick="gameStart()">Volver</button>
+                </p>
             </div>
           </div>
         </div>
@@ -286,7 +289,7 @@
               <h5 class="card-title text-center">Mi cuenta</h5>
               <form id="cuenta-form" name="cuenta-form">
                 <div class="form-label-group">
-                  <img src="" id="cuenta-avatar" onclick="openBasicProfile()">
+                  <img src="" id="cuenta-avatar" onclick="avatargallery()">
                 </div>
                 <div class="form-label-group">
                   <input type="text" id="cuenta-user" name="cuenta-user" class="form-control">
@@ -373,7 +376,7 @@
       </div>
     </section><!-- end of activation -->
 
-    <!-- footer navbar -->  
+    <!-- footer navbar   
     <nav class="navbar navbar-light bg-blue sticky-bottom fixed-bottom" id="footer-menu">
       <ul class="menu-icons">
         <li class="menu-icons-item menu-icon-active" onclick="gameStart()">
@@ -393,7 +396,7 @@
           <span class="icon-text">Salir</span>
         </li>
       </ul>
-    </nav><!-- end of footer navbar -->
+    </nav> end of footer navbar -->
 
     <!-- JS Jquery library -->
     <script src="js/jquery-3.5.1.min.js"></script>
