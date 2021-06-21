@@ -161,7 +161,7 @@
           <div class="card card-signin flex-row my-5">
             <div class="card-body">
               <h5 class="card-title text-center">Ya falta poco, necesitamos que completes estos últimos datos</h5>
-              <form class="form-signin" id="form-nameandage">
+              <form class="form-signin" id="form-datospersonales">
                 <div class="form-label-group">
                   <input type="text" id="userfname" name="userfname" class="form-control" placeholder="Nombre" required>
                 </div>
@@ -169,8 +169,8 @@
                   <input type="text" id="userlname" name="userlname" class="form-control" placeholder="Apellido" required>
                 </div>
                 <div class="form-label-group">
-                  <select class="form-select" id="gender" name="gender">
-                    <option>Elegí una opción</option>
+                  <select class="form-select" id="gender" name="gender" required>
+                    <option value="">Elegí una opción</option>
                     <option value="1">Masculino</option> 
                     <option value="2">Femenino</option> 
                     <option value="3">Otro</option> 
@@ -180,10 +180,10 @@
                   <input type="number" id="useredad" name="useredad" class="form-control" placeholder="Edad" min="16" max="99" required>
                 </div>
                 <div class="form-label-group">
-                  <select id="provincia" name="provincia" class="form-select" onchange="getLocalidades()"></select>
+                  <select id="provincia" name="provincia" class="form-select" required onchange="getLocalidades()"></select>
                 </div>
                 <div class="form-label-group">
-                  <select id="localidad" name="localidad" class="form-select" disabled></select>
+                  <select id="localidad" name="localidad" class="form-select" required disabled></select>
                 </div>
         
                 <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="nameandage-button" onclick="sendDatosPersonales()">Siguiente</button>
@@ -308,6 +308,12 @@
                     <option value="2">Femenino</option> 
                     <option value="3">Otro</option> 
                   </select>
+                </div>
+                <div class="form-label-group">
+                  <select id="provincia-c" name="provincia" class="form-select" required onchange="getLocalidades(1)"></select>
+                </div>
+                <div class="form-label-group">
+                  <select id="localidad-c" name="localidad" class="form-select" required ></select>
                 </div>
               </form>
                 <p align="center">

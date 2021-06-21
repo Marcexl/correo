@@ -34,6 +34,8 @@ if(isset($_GET['email']))
    $data->pass    = $row['Pass'];
    $data->edad    = $row['Edad'];
    $data->avatar  = $row['Avatar'].".png";
+   $data->prov    = $row['Provincia'];
+   $data->loca    = $row['Localidad'];
   }
   
  

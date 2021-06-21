@@ -11,7 +11,7 @@ include_once("../config/funciones.php");
 
 if(isset($_GET['provincia']))
 {
-	$select = '';
+	$select = '<option value="">Seleccioná una provincia</option>';
 
 	$sql = "SELECT idProvincia, Descripcion 
 			FROM `provincias` ORDER BY Descripcion ASC";

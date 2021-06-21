@@ -24,8 +24,8 @@ if(isset($_POST['email']))
   $lname     = $_POST['cuenta-lname'];
   $edad      = $_POST['cuenta-edad'];
   $gender    = $_POST['cuenta-gender'];
-  $provincia = $_POST['cuenta-prov'];
-  $localidad = $_POST['cuenta-loca'];
+  $provincia = $_POST['provincia'];
+  $localidad = $_POST['localidad'];
 
 
   $sql = "UPDATE `people` 

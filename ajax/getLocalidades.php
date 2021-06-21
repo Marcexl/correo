@@ -15,7 +15,7 @@ if((isset($_GET['provincia'])) AND (isset($_GET['localidad'])) )
 
 	$idProvincia = $_GET['provincia'];
   
-  $select = '<option>Seleccioná una localidad</option>';
+  $select = '<option value="">Seleccioná una localidad</option>';
 
 	$sql = "SELECT idLocalidad, Descripcion FROM `localidades` 
 			WHERE idProvincia = $idProvincia 
