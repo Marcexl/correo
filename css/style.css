@@ -1,7 +1,9 @@
 /*
  * remixed by Marcexl
- * version 19062021
+ * all rights reserved 
+ * version 21062021
  */
+
 *{
   padding: 0;
   margin: 0;
@@ -665,7 +667,7 @@ background: linear-gradient(90deg, rgba(233,30,99,1) 0%, rgba(171,9,64,1) 100%);
   margin: 1rem 0;
 }
 
-/* main menu */
+/* MAIN MENU */
 .main-menu-options{
   display: flex;
   z-index: 1;
@@ -720,7 +722,7 @@ background: linear-gradient(90deg, rgba(233,30,99,1) 0%, rgba(171,9,64,1) 100%);
   background: #ac0941;
 }
 
-/* menu footer */
+/* MENU FOOTER */
 #footer-menu{
   height:100vh;
   padding: 0;
@@ -960,6 +962,49 @@ background: linear-gradient(90deg, rgba(233,30,99,1) 0%, rgba(171,9,64,1) 100%);
 
 .modal-footer .btn-primary{
 	margin: .25rem;
+}
+
+/* lugares */
+
+#listado-lugares tr td i{
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 3px;
+  margin: 5px;
+}
+
+.fa-trash{
+  color: #f44336;
+}
+
+#emoji{
+  width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* scroll */
+.ir-arriba {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0e70bb;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  /*border-radius: 50%;*/
+}
+
+.ir-arriba i{
+    padding: 6px 7px;
+    color:white!important;
 }
 
 /* media screen+ */

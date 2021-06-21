@@ -16,12 +16,13 @@
     <meta name="google-signin-client_id" content="706842631309-bnj8q7e2ofbcu4tbnrq0vmctkt67vrf6.apps.googleusercontent.com">
     <meta name="color-scheme" content="light dark">
     
-    <!-- librerias externas css -->
+    <!-- librerias css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="css/material-icons.css" rel="stylesheet" type="text/css">
     <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
-
-    <!-- libreria css @bymarcexl -->
+    <link rel="stylesheet" type="text/css" href="css/dataTable.css" />
+    
+    <!-- css @bymarcexl -->
     <link href="css/style.css?anio=2021" rel="stylesheet" type="text/css">
 
     <!--script src="https://apis.google.com/js/platform.js" async defer></script-->
@@ -38,6 +39,11 @@
         <span class="sr-only"></span>
       </div>
       <div class="loader-msj" id="loader-msj"></div>
+    </div>
+
+    <!-- ir arriba -->
+    <div class="ir-arriba">
+      <a href="#"><i class="material-icons">keyboard_arrow_up</i></a>
     </div>
 
     <!-- modal msj -->
@@ -194,18 +200,18 @@
       </div>
     </section><!-- end of datospersonales -->
 
-    <section id="datospersonales" style="display:none;">
+    <section id="lugares" style="display:none;">
       <div class="row">
         <div class="col-lg-10 col-xl-9 mx-auto">
           <div class="card card-signin flex-row my-5">
             <div class="card-body">
-              <h5 class="card-title text-center">Lista de lugares preferidos de Felipe</h5>
-              <form class="form-signin" id="form-nameandage">
+              <h5 class="card-title text-center ">Lista de lugares preferidos de Felipe</h5>
+              <form class="form-signin" id="form-lugares">
                 <div class="form-label-group">
                   <input type="text" id="lugar" name="lugar" class="form-control" placeholder="Lugar por ej: Sillón" required>
                 </div>
         
-                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="nameandage-button" onclick="agregarLugar()">Agregar</button>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="lugares-button" onclick="agregarLugar()">Agregar</button>
               </form>
             </div>
           </div>
@@ -216,7 +222,9 @@
         <div class="col-lg-10 col-xl-9 mx-auto">
           <div class="card card-signin flex-row my-5">
             <div class="card-body">
-              <h5 class="card-title text-center">Listado</h5>
+              <h5 class="card-title text-center mb-0">Listado</h5>
+              <img src="img/empty.gif" id="emoji">
+              <p class="text-center">Ups! Nada por aqui...</p>
               <table class="display" id="listado-lugares">
                 <thead>
                   <tr>
@@ -245,7 +253,7 @@
                     <i class="material-icons">location_on</i> 
                     <span class="material-text">Donde</span>
                   </a>  
-                  <a href="javascript:void(0);" class="main-menu-item" id="m-m-2" onclick="userList();"> 
+                  <a href="javascript:void(0);" class="main-menu-item" id="m-m-2" onclick="lugares();"> 
                     <i class="material-icons">list</i> 
                     <span class="material-text">Lugares</span>
                   </a> 
@@ -390,6 +398,7 @@
     <!-- JS Jquery library -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src='js/jquery.validate.js'></script> 
+    <script src='js/jquery.dataTables.js'></script> 
 
     <!-- JS Library @bymarcexl -->
     <script src="js/login.js?anio=2021"></script>
@@ -398,6 +407,7 @@
     <script src="js/avatar.js?anio=2021"></script>
     <script src="js/datospersonales.js?anio=2021"></script>
     <script src="js/cuenta.js?anio=2021"></script>
+    <script src="js/lugares.js?anio=2021"></script>
     <script src="js/gamestart.js?anio=2021"></script>
     <script src="js/funciones.js?anio=2021"></script>
     <script src="js/menu.js?anio=2021"></script>
