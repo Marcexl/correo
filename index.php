@@ -145,7 +145,7 @@
           <div class="card card-signin flex-row my-5">
             <div class="card-body">
               <h5 class="card-title text-center">Seleccioná un avatar</h5>
-              <div id="basicprofile-result"></div>
+              <div id="avatargallery-result"></div>
               <div class="form-label-group" align="center">
                 <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="avatar-button" onclick="checkGender()">Siguiente</button>
               </div>

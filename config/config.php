@@ -10,6 +10,6 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "correo";
-$http	= 'http://localhost/correo';
+$http	= 'http://localhost/apps/correo';
 
 ?>
