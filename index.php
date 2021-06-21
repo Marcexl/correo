@@ -147,7 +147,7 @@
               <h5 class="card-title text-center">Seleccioná un avatar</h5>
               <div id="avatargallery-result"></div>
               <div class="form-label-group" align="center">
-                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="avatar-button" onclick="checkGender()">Siguiente</button>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="avatar-button" onclick="checkDatosPersonales()">Siguiente</button>
               </div>
             </div>
           </div>
