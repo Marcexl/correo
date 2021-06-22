@@ -1,0 +1,122 @@
+@media (max-width:1450px) {
+	.item {
+	  margin: 15px auto;
+	  width: 550px;
+	  height: 50px;
+	  border-radius: 10px;
+	  border: 1px solid #7c9bbd;
+	}
+	.item  img{
+		width:50px;
+	}
+	h3{
+	padding:15px 0;
+	font-size:1em;
+	}
+	#portfolio .item {
+	width:550px;
+	}
+	
+}
+
+
+@media (max-width:1360px) {
+	.item {
+	  margin: 10px auto;
+	  width: 450px;
+	  height: 40px;
+	  border-radius: 10px;
+	  border: 1px solid #7c9bbd;
+	}
+	.item  img{
+		width:40px;
+	}
+	#portfolio .item {
+	width:450px;
+	}
+	h3{
+	padding:10px 0;
+	font-size:0.8em;
+	}
+	
+	input{
+		height:25px;`
+		}
+}
+
+@media(max-width:800px){
+	#servicios, #nav, #logo{
+		display:none;
+	}
+	#mxlmenu, #serviciosM, #logoMobile{
+		display: block!important;
+	}
+	
+	#logoMobile{
+		position: absolute;
+		width: 50px;
+		right: 5px;
+		top:0;
+	} 
+	#logoMobile img{
+		padding: 4px 0;
+		margin:0;
+		width:45px;
+	}
+	h3{
+	padding:10px 0;
+	font-size:11px;
+	}
+
+	#serviciosM, #contact, #portfolio{
+	margin-top: 10px!important;
+	}
+	.row img{
+		width:30%;
+	}
+	.content, .row {
+		width:95%;
+	}
+	.content img{
+		width:30%;
+	}
+	.item  img{
+		width:30px;
+	}
+	.item {
+	  margin: 5px auto;
+	  height: 30px;
+	  width: 98%;
+	}
+	#portfolio .item {
+	width:auto;
+	}	
+	input{
+		width:250px;
+		height:auto;
+		padding: 10px;
+	}
+	textarea{
+		width:250px;
+		height:50px;
+		padding:  10px;
+	}
+	.butForm{
+	width: 270px;
+	color: #FFF;
+	background-color:#0d7a97;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: none;
+	}
+	.col1, .col2{
+	margin: 0 2px 0 0;
+
+	}
+	header, section{
+		margin-top: 0px;
+	}
+	footer {
+		font-size: 11px;
+	}
+}

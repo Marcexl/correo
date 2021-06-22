@@ -1,0 +1,16 @@
+/*!
+	2015 by marcexl
+*/
+@font-face {
+  font-family: "Open-sans";
+   font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Open-sans.ttf') format('truetype'), url('../fonts/Open-sans.eot') format('eot'), url('../fonts/Open-sans.woff') format('woff'), url('../fonts/Open-sans.svg') format('svg');
+}
+
+@font-face {
+  font-family: "Kartika";
+   font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/kartika.ttf') format('truetype'), url('../fonts/kartika..eot') format('eot'), url('../fonts/kartika..woff') format('woff'), url('../fonts/kartika.svg') format('svg');
+}

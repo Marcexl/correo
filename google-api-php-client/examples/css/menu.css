@@ -1,0 +1,65 @@
+/* definimos el cuadrado con las lineas */
+    nav{
+      width:100%;
+      border-bottom: 1px solid #616161;
+      background-color:#0d7a97;
+      
+      
+      font-family: Helvetica;
+    }
+    .iconoMenuDesplegable {
+        position: relative;
+        top:7px;
+        left:10px;
+        height: 40px;
+        width: 25px;
+        
+    }
+    .iconoMenuDesplegable>span, .iconoMenuDesplegable>span::after {
+        background-image: url(../img/squares.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size: 25px;
+        position: absolute;
+        right:0;
+        top:0;
+        -moz-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+    .iconoMenuDesplegable>span {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+    }
+    .iconoMenuDesplegable>span::after {
+        content: "";
+        width: 100%;
+    }
+    .efecto>span,.efecto>span::after {
+        background-image: url(../img/squares_down.png);
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        background-size: 25px;
+    }
+ 
+    /* definimos el menu */
+    #menuMobile {
+        display:none;
+        list-style: none;
+        padding:0px;
+        margin:0px;
+    }
+    #menuMobile a{color:#FFF;text-decoration:none;}
+    #menuMobile li {
+        background-color:#686868;
+        padding:5px 10px;
+        border-bottom:1px solid #616161;
+    }
+    #menuMobile li:hover {
+        background-color:#0d7a97;
+        padding:5px 10px;
+         -moz-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
