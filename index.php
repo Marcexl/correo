@@ -3,51 +3,10 @@
  * mixed by marcexl
  * version 17062021
  */
+
+include_once("inc/header.php");
+
 ?>
-<!DOCTYPE html>
-
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-    <meta name="color-scheme" content="light dark">
-    <meta name="google-signin-client_id" content="706842631309-bnj8q7e2ofbcu4tbnrq0vmctkt67vrf6.apps.googleusercontent.com">
-    <meta name="color-scheme" content="light dark">
-    
-    <!-- librerias css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="css/material-icons.css" rel="stylesheet" type="text/css">
-    <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/dataTable.css" />
-    
-    <!-- css @bymarcexl -->
-    <link href="css/style.css?anio=2021" rel="stylesheet" type="text/css">
-
-    <!--script src="https://apis.google.com/js/platform.js" async defer></script-->
-    <link rel="shortcut icon" href="img/felico.ico" />
-    <title>¿Dónde esta Felipe?</title>
-</head>
-  <body>
-    <!-- alerts -->
-    <div id="alert-msj" style="display:none;"></div>
-    
-    <!-- loader -->
-    <div id="loader">
-      <div class="spinner-border" role="status" >
-        <span class="sr-only"></span>
-      </div>
-      <div class="loader-msj" id="loader-msj"></div>
-    </div>
-
-    <!-- ir arriba -->
-    <div class="ir-arriba">
-      <a href="#"><i class="material-icons">keyboard_arrow_up</i></a>
-    </div>
-
-    <!-- modal msj -->
-    <div class="modal" tabindex="-1" role="dialog" id="modal-msj" style="display:none;"></div>
 
     <!-- header navbar -->
     <nav class="navbar sticky-top navbar-dark bg-blue" id="header-menu" style="display:none;">
@@ -122,7 +81,7 @@
                 <a class="d-block text-center mt-2 small" href="#" onclick="signInForm()">Ingresar con cuenta felipe</a>
                 <hr class="my-4">
                 <p align="center">O ingresá con tu cuenta de Google.</p>
-                <button class="btn btn-lg btn-google btn-block text-uppercase"type="button"><i class="fab fa-google mr-2"></i> Ingresar con Google</button>
+                <a class="btn btn-lg btn-google btn-block text-uppercase" href="login.php"><i class="fab fa-google mr-2"></i> Ingresar con Google</a>
                
                 </form>
               </div>
@@ -311,10 +270,10 @@
                   <input type="text" id="cuenta-lname" name="cuenta-lname" class="form-control">
                 </div>
                 <div class="form-label-group">
-                  <input type="number" id="cuenta-edad" name="cuenta-edad" class="form-control" min="16" max="99">
+                  <input type="number" id="cuenta-edad" name="cuenta-edad" class="form-control" min="16" max="99" placeholder="Edad">
                 </div>
                 <div class="form-label-group">
-                  <select class="form-select" id="cuenta-gender" name="cuenta-gender">
+                  <select class="form-select" id="cuenta-gender" name="cuenta-gender" > 
                     <option value="1">Masculino</option> 
                     <option value="2">Femenino</option> 
                     <option value="3">Otro</option> 
