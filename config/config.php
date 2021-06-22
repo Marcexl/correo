@@ -9,7 +9,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "correo";
+$dbname = "felipe";
 $http	= 'http://localhost/apps/felipe';
 
 ?>
