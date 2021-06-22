@@ -1,7 +1,6 @@
-
-*********				*********************		  ********************       
-*********				**********	**********	     **********  *********
-*************		**************   **********		**********   *********
+*********				        *********************		      ********************       
+*********				        **********	**********	     **********  *********
+*************		    **************   **********		  **********   *********
 **********************************    **********   **********    *********
 **********************************     ********************      *********
 ********   ***********  **********     ********************      *********
@@ -42,7 +41,7 @@ o el nombre que quieras
 
 3) Importa el archivo "whereis.sql", en la base de datos que creaste, el mismo se encuentra en la carpeta mysql. O crea las tablas corriendo los scripts que se encuentran en él.
 
-4) Modificá los datos de usuario y contraseña del archivo config.php
+4) Modificá los datos de usuario y contraseña del archivo config.php (de ser necesario)
 
 5) Modificá la variable $http del archivo config.php a donde hayas clonado el repo
 por ej: http://localhost/apps/felipe
