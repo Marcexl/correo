@@ -37,11 +37,10 @@ c:/xampp/htdocs/apps/felipe
 
 2) Para que la app funcione necesitamos instalar la BD en un mysql
 CREATE DATABASE IF NO EXISTS felipe; 
-o el nombre que quieras
 
 3) Importa el archivo "whereis.sql", en la base de datos que creaste, el mismo se encuentra en la carpeta mysql. O crea las tablas corriendo los scripts que se encuentran en él.
 
-4) De ser necesario modificá los datos del archivo config.php  
+4) De ser necesario modificá los datos del archivo config.php por ejemplo el usuario y pass que accede a la BD. Sino deja los de root
 client_id y client_secret las tenes en tu consola de google https://console.cloud.google.com/
 las actuales solo funcionan para la uri http://localhost/apps/felipe 
 
@@ -67,7 +66,8 @@ Todas estas acciones van sumando puntos, si en un considerable tiempo no le pres
 Falta poder crear un abm para poder subir fotos y opciones de donde podria estar el gato
 Falta poder chequear y modificar el level de juego 
 Falta poder chequear y mostrar el puntaje acumulado
-falata implementar Notificaciones push
+Falta implementar Notificaciones push
+Falta implementar los botones para sumar o restar puntaje y las tablas
 Se deberia poder migrar a cordova o react para poder compilar una app
 
 *******************
