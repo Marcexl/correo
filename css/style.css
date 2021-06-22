@@ -58,7 +58,8 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
   font-weight: bold;
   padding: 1rem 1.5rem;
   transition: all 0.2s;
-  margin: 5px 5px 5px 0;
+  margin: 5px auto;
+  display: block;
 }
 
 .form-label-group {
@@ -102,6 +103,7 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%,
   background-color: #ea4335;
   margin: 0 auto!important;
   display: block;
+  max-width: 250px;
 }
 
 .btn-facebook {
@@ -539,11 +541,13 @@ label.error{
 }
 
 /* google button */
+
 .abcRioButtonLightBlue{
   min-width: 150px!important;
   border-radius: 3rem!important;
   height: auto!important;
   text-align: left;
+  margin: 0 auto;
 }
 
 .abcRioButtonContentWrapper{

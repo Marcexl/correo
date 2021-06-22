@@ -22,7 +22,7 @@ if(isset($_POST['email']))
   $fname = '';
   $edad  = '';
 
-  $sql = "SELECT LastName, FirstName, Edad
+  $sql = "SELECT LastName, FirstName
           FROM `people` 
           WHERE Email = '$email' 
           AND Active = 1";
@@ -32,10 +32,9 @@ if(isset($_POST['email']))
   {
     $lname = $row['LastName'];
     $fname = $row['FirstName'];
-  	$edad = $row['Edad'];
   }
   
-  if( (empty($lname)) || (empty($fname)) || (empty($edad)) ) 
+  if( (empty($lname)) || (empty($fname)) ) 
   {
     $data->success = false;
     $data->msj = 'Actualizá tus datos.';
