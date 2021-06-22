@@ -73,7 +73,7 @@ if (isset($authUrl)) {
 
 ?>
  <!-- sections -->
-    <section id="login">
+    <section id="login" style="display:none;">
       <div class="row">
         <div class="col-lg-10 col-xl-9 mx-auto">
           <div class="card card-signin flex-row my-5">
@@ -102,9 +102,13 @@ if (isset($authUrl)) {
         </div>
       </div>
     </section><!-- end of login -->
-
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+      $("#login").fadeIn();
+    </script>
 <?php
-
+   
 } 
 else 
 {
@@ -125,7 +129,7 @@ else
   if($e == 2)
   {
     ?>
-    <section id="activation" style="display:block;">
+    <section id="activation" style="display:none;">
       <div class="row">
         <div class="col-lg-10 col-xl-9 mx-auto">
           <div class="card card-signin flex-row my-5">
@@ -144,6 +148,8 @@ else
           <script src="js/google.js?anio=2021"></script>
           <script>
             $("#loader").fadeIn();
+            $("#activation").fadeIn();
+
             setTimeout(function(){
               initGoogleSession(\''.$token.'\',\''.$useremail.'\');
             },1500);
@@ -154,7 +160,7 @@ else
   {
 
     ?>
-    <section id="activation" style="display:block;">
+    <section id="activation" style="display:none;">
       <div class="row">
         <div class="col-lg-10 col-xl-9 mx-auto">
           <div class="card card-signin flex-row my-5">
@@ -204,6 +210,7 @@ else
                 <script src="js/google.js?anio=2021"></script>
                 <script>
                   $("#loader").fadeIn();
+                  $("#activation").fadeIn();
                   setTimeout(function(){
                     initGoogleSession(\''.$token.'\',\''.$useremail.'\');
                   },1500);

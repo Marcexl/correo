@@ -51,7 +51,7 @@ function signOut(){
       modal += '<p>¿Estás seguro que querés cerrar sesión?</p>';
       modal += '</div>';
       modal += '<div class="modal-footer">';
-      modal += '<button type="button" class="btn btn-primary" onclick="kill();">Salir</button>';
+      modal += '<button type="button" class="btn btn-primary" onclick="salir();">Salir</button>';
       modal += '<button type="button" class="btn btn-secondary close-modal" onclick="closeModal();" id="close-modal" data-dismiss="modal">Cancelar</button>';
       modal += '</div>';
       modal += '</div>';
@@ -61,11 +61,6 @@ function signOut(){
 
 }
 
-function kill(){
-  $("#loader").fadeIn();
-
-  localStorage.removeItem("people");
-  setTimeout(function(){
-    location.reload();
-  },1500);
+function salir(){
+  location = "salir.php";
 }

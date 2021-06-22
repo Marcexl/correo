@@ -78,7 +78,7 @@ include_once("inc/header.php");
                 
                 <button class="btn btn-lg btn-primary btn-block text-uppercase" id="register-button" type="button" onclick="registerPeople()">Registrame</button>
 
-                <a class="d-block text-center mt-2 small" href="#" onclick="signInForm()">Ingresar con cuenta felipe</a>
+                <a class="d-block text-center mt-2 small" href="#" onclick="signInForm()">Ingresar con cuenta Felipe</a>
                 <hr class="my-4">
                 <p align="center">O ingresá con tu cuenta de Google.</p>
                 <a class="btn btn-lg btn-google btn-block text-uppercase" href="login.php"><i class="fab fa-google mr-2"></i> Ingresar con Google</a>
