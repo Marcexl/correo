@@ -177,68 +177,83 @@ function editarLugar(idLugar,data)
       modal += '<span aria-hidden="true">&times;</span>';
       modal += '</button>';
       modal += '</div>';
+      modal += '<form id="update-lugar">';
       modal += '<div class="modal-body">';
-      modal += '<form class="form-signin" id="update-lugar">';
       modal += '<div class="form-label-group">';
       modal += '<input type="text" id="lugar-update" name="lugar" class="form-control valid" value="'+data+'"/>';
       modal += '<input type="hidden" id="idLugar" name="idLugar" value="'+idLugar+'"/>';
       modal += '</div>';
-      modal += '</form>';
       modal += '</div>';
       modal += '<div class="modal-footer">';
       modal += '<button type="button" class="btn btn-primary" onclick="update();">Actualizar</button>';
       modal += '<button type="button" class="btn btn-secondary close-modal" onclick="closeModal();" id="close-modal" data-dismiss="modal">Cancelar</button>';
       modal += '</div>';
       modal += '</div>';
+      modal += '</form>';
       modal += '</div>';
 
   $("#modal-msj").fadeIn().html(modal);
 
 }
 
-function update()
-{
+function update(){
 
-  let usrInfo = JSON.parse(localStorage.getItem("people"));
-  let token   = usrInfo.token;  
-  let email   = usrInfo.email;  
-  let url = path+'ajax/editarLugar.php';
-  let dataString = $("#update-lugar").serialize() + '&email='+email;
+  let string = $("#lugar-update").val();
 
-  $.ajax({
-    type: 'POST',
-    url: url,
-    data: dataString,
-    headers: {'Authorization': 'Bearer '+token},
-    error: function (res){
-      console.log(res);
-    },
-    beforeSend: function(){
-    },
-    success: function(res){
-      $("#loader").fadeOut();
+  if(string.length < 3)
+  {
+    alert("El campo debe tener por lo menos 3 caracteres");
+    return false;
+  }
+  else
+  {
 
-      let data = JSON.parse(res);
-      
-      if(data['success'] == true)
-      {
-        let alert = '<div class="alert alert-success" role="alert">Se ha actualizado el lugar!</div>';
-        $("#alert-msj").show().html(alert);
-        setTimeout(function(){
-          $("#alert-msj").fadeOut();
-          closeModal();
-          lugares();
-        },2000);
+    $("#loader").fadeIn();
+
+    let usrInfo = JSON.parse(localStorage.getItem("people"));
+    let token   = usrInfo.token;  
+    let email   = usrInfo.email;  
+    let url = path+'ajax/editarLugar.php';
+    let dataString = $("#update-lugar").serialize() + '&email='+email;
+   
+    $.ajax({
+      type: 'POST',
+      url: url,
+      data: dataString,
+      headers: {'Authorization': 'Bearer '+token},
+      error: function (res){
+        console.log(res);
+      },
+      beforeSend: function(){
+      },
+      success: function(res){
+        $("#loader").fadeOut();
+
+        let data = JSON.parse(res);
+        
+        if(data['success'] == true)
+        {
+          let alert = '<div class="alert alert-success" role="alert">Se ha actualizado el lugar!</div>';
+          $("#alert-msj").show().html(alert);
+          setTimeout(function(){
+            $("#alert-msj").fadeOut();
+            closeModal();
+            lugares();
+          },2000);
+        }
+        else
+        {
+          let msj = data['msj'];
+          let alert = '<div class="alert alert-warning" role="alert">'+msj+'</div>';
+          $("#alert-msj").show().html(alert);
+          setTimeout(function(){
+            $("#alert-msj").fadeOut();
+          },3000);
+        }
       }
-      else
-      {
-        let msj = data['msj'];
-        let alert = '<div class="alert alert-warning" role="alert">'+msj+'</div>';
-        $("#alert-msj").show().html(alert);
-        setTimeout(function(){
-          $("#alert-msj").fadeOut();
-        },3000);
-      }
-    }
-  });
+    });
+  }
 }
+
+
+
