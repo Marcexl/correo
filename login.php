@@ -81,11 +81,20 @@ if (isset($authUrl)) {
                <!-- Background image for card set in CSS! -->
             </div>
             <div class="card-body">
-              <h1 class="text-center">¿Dónde esta Felipe?</h1>
-              <h5 class="card-title text-center">Se suele escapar seguido esperemos que este bien...</h5>
+              <h1 class="text-center">Login</h1>
+              <!--h5 class="card-title text-center">Se suele escapar seguido esperemos que este bien...</h5-->
               <form class="form-signin" id="form-register">
-                <p align="center">Ingresá con tu cuenta de google</p>
-                <a class="btn btn-lg btn-google btn-block text-uppercase" href="<?php echo $authUrl;?>">Ingresar</a>
+                <p align="center">Aclaraciones al ingresar con tu cuenta de google</p>
+                <ul class="oauth">
+                  <li>Este sistema utiliza la validación de Oauth conectandose de la API de Google</li>
+                  <li>Para ell debes tener una cuenta de google para poder loguearte</li>
+                  <li>Tené en cuenta que al aceptar los términos y condiciones, estás aceptando las condiciones de Google</li>
+                </ul>
+                <a class="btn btn-lg btn-google btn-block text-uppercase mt-3" href="<?php echo $authUrl;?>"><i class="fab fa-google mr-2"></i> Ingresar</a>
+                <p class="mt-3 text-center"> <i>Versión 22.06.2021</i></p>
+                <hr class="my-4">
+                <p align="center">O ingresá con tu cuenta de Felipe.</p>
+                <a class="d-block text-center mt-2 small" href="index.php">Volver</a>
                 </form>
               </div>
             </div>
