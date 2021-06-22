@@ -99,7 +99,7 @@ class Google_Config
           'include_granted_scopes' => '',
           'login_hint' => '',
           'request_visible_actions' => '',
-          'access_type' => 'offline',
+          'access_type' => 'online',
           'approval_prompt' => 'auto',
           'federated_signon_certs_url' =>
               'https://www.googleapis.com/oauth2/v1/certs',
