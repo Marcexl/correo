@@ -46,8 +46,11 @@ las actuales solo funcionan para la uri http://localhost/apps/felipe
 
 5) Listo! ya podes correr la aplicacion ingresando a la url que creaste.
 
-Actualmente se puede acceder a esta version en
+Actualmente se puede acceder a esta version en:
 https://marcexlweb.com/apps/felipe/
+
+Listado de servicios:
+https://docs.google.com/spreadsheets/d/15ytYz3ttMUK7Dr0F9YoiCLyVvN594ltdxwu-4SWMd3M/edit?usp=sharing
 
 *************
 * Contenido *
