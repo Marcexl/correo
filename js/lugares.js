@@ -172,7 +172,7 @@ function editarLugar(idLugar,data)
       modal += '<div class="modal-dialog" role="document">';
       modal += '<div class="modal-content">';
       modal += '<div class="modal-header">';
-      modal += '<h5 class="modal-title">Cerrar sesión</h5>';
+      modal += '<h5 class="modal-title">Actualizar lugar</h5>';
       modal += '<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal();">';
       modal += '<span aria-hidden="true">&times;</span>';
       modal += '</button>';
