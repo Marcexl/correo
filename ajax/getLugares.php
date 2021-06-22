@@ -38,7 +38,7 @@ if(isset($_GET['email']))
     $table .= '<tr>';
     $table .= '<td>'.$i.'</td>';
     $table .= '<td>'.$lugar.'</td>';
-    $table .= '<td><i class="fas fa-edit"></i> <i class="fas fa-trash" onclick="deleteLugar('.$idLugar.')"></i></td>';
+    $table .= '<td><i class="fas fa-edit" onclick="editarLugar('.$idLugar.',\''.$lugar.'\')"></i> <i class="fas fa-trash" onclick="deleteLugar('.$idLugar.')"></i></td>';
     $table .= '</tr>';
    
   }

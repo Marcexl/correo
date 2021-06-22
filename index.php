@@ -72,7 +72,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
-            <form id="sign-form" method="post">
+            <form id="sign-form">
               <div class="form-label-group">
                 <input type="email" id="useremail" name="useremail" class="form-control" placeholder="Email" required>  
               </div>
