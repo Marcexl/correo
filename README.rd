@@ -32,7 +32,7 @@ Fontawesome v5.15.1
 **********************************
 * Instrucciones de configuración *
 **********************************
-1) Clona el repositorio en un directorio local por ej:
+1) Clona el repositorio en un directorio local a:
 c:/xampp/htdocs/apps/felipe
 
 2) Para que la app funcione necesitamos instalar la BD en un mysql
@@ -41,12 +41,11 @@ o el nombre que quieras
 
 3) Importa el archivo "whereis.sql", en la base de datos que creaste, el mismo se encuentra en la carpeta mysql. O crea las tablas corriendo los scripts que se encuentran en él.
 
-4) Modificá los datos de usuario y contraseña del archivo config.php (de ser necesario)
+4) De ser necesario modificá los datos del archivo config.php  
+client_id y client_secret las tenes en tu consola de google https://console.cloud.google.com/
+las actuales solo funcionan para la uri http://localhost/apps/felipe 
 
-5) Modificá la variable $http del archivo config.php a donde hayas clonado el repo
-por ej: http://localhost/apps/felipe
-
-6) Listo! ya podes correr la aplicacion ingresando a la url que creaste.
+5) Listo! ya podes correr la aplicacion ingresando a la url que creaste.
 
 Actualmente se puede acceder a esta version en
 https://marcexlweb.com/apps/felipe/
