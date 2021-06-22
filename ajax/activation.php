@@ -19,10 +19,7 @@ if(isset($_POST['token']))
   $token = $_POST['token'];
   $email = $_POST['email'];
   
-  $sel = "SELECT idPeople FROM `people` WHERE Email = '$email'";
-  $resultado = $conn->query($sel); 
-  $row = $resultado->fetch_assoc(); 
-  $idPeople = $row['idPeople'];
+  $idPeople = getIdPeople($email);
 
   /*
    * 1) chequeo que no haya activado ya
